@@ -1,6 +1,6 @@
 # mqtt2chromium-kiosk
 
-Write Armbian_23.08.0-trunk_Bananapi_bookworm_current_6.1.37_xfce_desktop.img to SD card
+Write [Armbian_23.08.0-trunk_Bananapi_bookworm_current_6.1.37_xfce_desktop.img](https://drive.google.com/file/d/1jjDfkKM7ALygaZ1p4toLcjfzhQf-jSZS/view?usp=drive_link) to SD card (link via [official docs](https://docs.banana-pi.org/en/BPI-M1/BananaPi_BPI-M1))
 
 Go through setup
 
