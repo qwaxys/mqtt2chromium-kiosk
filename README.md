@@ -23,6 +23,12 @@ Or send multiple with a **delay** in seconds between rotation and indicate if yo
 
 Note that the Pi's aren't as powerfull as you hope so stick to simpler webpages without video.
 
+## Todo
+
+remove any hard links.
+Use virtual enviroment or package pychrome. (paho-mqtt already exists as a package)
+Make an install script or package this mess.
+
 ## How to install
 
 Write [Armbian_23.08.0-trunk_Bananapi_bookworm_current_6.1.37_xfce_desktop.img](https://drive.google.com/file/d/1jjDfkKM7ALygaZ1p4toLcjfzhQf-jSZS/view?usp=drive_link) to SD card (link via [official docs](https://docs.banana-pi.org/en/BPI-M1/BananaPi_BPI-M1))
@@ -49,11 +55,13 @@ Uncomment both and set it to your username.
 sudo apt update
 sudo apt install chromium python3-pip netcat-traditional
 
-
 sudo pip install pychrome  --break-system-packages
 sudo pip install paho-mqtt --break-system-packages
 
 ```
+
+Get this project in your home directory with git clone / wget or any other way.
+
 
 
 
