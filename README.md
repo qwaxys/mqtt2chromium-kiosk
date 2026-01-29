@@ -25,9 +25,9 @@ Note that the Pi's aren't as powerfull as you hope so stick to simpler webpages 
 
 ## Todo
 
-remove any hard links.
-Use virtual enviroment or package pychrome. (paho-mqtt already exists as a package)
-Make an install script or package this mess.
+- [ ] remove any hard links.
+- [ ] Use virtual enviroment or package pychrome. (paho-mqtt already exists as a package)
+- [ ] Make an install script or package this mess.
 
 ## How to install
 
