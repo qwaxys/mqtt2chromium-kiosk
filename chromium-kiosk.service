@@ -1,0 +1,15 @@
+[Unit]
+Description=Chromium Kiosk
+After=default.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 5
+ExecStart=/usr/bin/chromium --start-fullscreen --kiosk /home/hsbxl/mqtt2chromium-kiosk/start.html --remote-debugging-port=9222
+Restart=always
+RestartSec=5
+Environment=DISPLAY=:0
+Environment=XDG_RUNTIME_DIR=/run/user/%U
+
+[Install]
+WantedBy=default.target
