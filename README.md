@@ -1,7 +1,7 @@
 # mqtt2chromium-kiosk
 
 ## Why?
-This project is made to reduce ewaste: it's aim is to reuse the stack of old Banana Pi M1's that FOSDEM donated to Hackerspace Brussels.
+This project is made to reduce ewaste: it's aim is to reuse the stack of old Banana Pi M1's that FOSDEM donated to Hackerspace Brussels. It *should* also just work on Rasberry Pi's and other armbian/raspbian/debian like systems. (to be tested)
 
 One service is responsible for (re)starting chromium fullscreen in kiosk mode with the remote debugging enabled.
 
