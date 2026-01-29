@@ -1,0 +1,16 @@
+[Unit]
+Description=MQTT URL Loader for Chromium Kiosk
+Requires=chromium-kiosk.service
+After=chromium-kiosk.service
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sh -c 'until nc -z localhost 9222; do sleep 1; done'
+ExecStart=/home/hsbxl/mqtt2chromium-kiosk/mqtt2chromium-kiosk.py
+Restart=always
+RestartSec=5
+Environment=DISPLAY=:0
+Environment=XDG_RUNTIME_DIR=/run/user/%U
+
+[Install]
+WantedBy=chromium-kiosk.service
