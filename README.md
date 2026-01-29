@@ -11,6 +11,8 @@ The python script will use MQTT to take URL(s) and open them in chromium via the
 
 ## How to use
 
+Have at least one message send with **retain**. This way, if the Pi (re)boots it has an initial URL config of what to do.
+
 Either send a single **URL**:
 ```
 {"url":"https://hackerspace.gent"}
@@ -62,6 +64,16 @@ sudo pip install paho-mqtt --break-system-packages
 
 Get this project in your home directory with git clone / wget or any other way.
 
+Double check if the hardcoded paths in the systemd files (.service) are correct.
 
+Edit the MQTT credential in the python file.
 
+```
+cp *.service ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable chromium-kiosk
+systemctl --user enable mqtt2chromium-kiosk
+```
+
+Now reboot to see if everything works as expected.
 
